@@ -1,0 +1,35 @@
+<div class="login-wrapper" fxLayout="row">
+    <div class="list-container" fxFlex="80" fxLayout="column" fxLayoutGap="12px">
+        <div class="search-bar">
+            <div class="input-wrapper">
+                <input matInput placeholder="Search" class="input-text-field-cls" (input)="searchText($event)" />
+                <mat-icon matSuffix class="search-icon-cls">search</mat-icon>
+            </div>
+            <button class="scroll-btn" mat-raised-button color="primary"
+                (click)="onScrollTClick()">{{scrollLabel}}</button>
+        </div>
+        <cdk-virtual-scroll-viewport itemSize="190" class="example-viewport">
+            <div *cdkVirtualFor="let property of filteredData" class="property-cls" fxLayout="row">
+                <div fxFlex="7.5">
+                    <img src="assets/placeholder.jpeg" height="64px" width="64px" />
+                </div>
+                <div class="property-details" fxFlex="92.5">
+                    <div>Id: {{property.id}}</div>
+                    <div>Name: {{property.name}}</div>
+                    <div>Address1: {{property.address1}}</div>
+                    <div>Address2: {{property.address2}}</div>
+                    <div>Price: {{property.price}}</div>
+                    <div>Type: {{property.type}}
+                            <button mat-button color="primary" class="view-more" (click)="onViewClick()" >View Details</button>
+                        <!-- <button class="view-more" mat-raised-button color="primary"
+                (click)="onViewClick()">View Details</button> -->
+                        <!-- <span (click)="onViewClick()" class="view-more">View More</span> -->
+                    </div>
+                </div>
+                <!-- <button class="scroll-btn" mat-raised-button color="primary"
+                (click)="onViewClick()">View Details</button> -->
+            </div>
+        </cdk-virtual-scroll-viewport>
+    </div>
+    <div class="filter-cls" fxFlex="20"></div>
+</div>

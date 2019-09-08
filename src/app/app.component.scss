@@ -1,0 +1,11 @@
+.parent-container{
+    .toolbar-cls {
+        height: 64px;
+    }
+    .parent-toolbar{
+        width:100%;
+    }
+    .router-cls{
+        height:calc(100vh - 64px)
+    }
+}

@@ -1,0 +1,77 @@
+.login-wrapper {
+  .list-container {
+    overflow-y: auto;
+  }
+  .search-container{
+    padding:5px;
+  }
+  .search-class {
+    height: 32px;
+  }
+  .example-card {
+    width: 90%;
+    height: 50px;
+  }
+
+  .search-bar {
+    padding: 10px;
+    width: 100%;
+    margin:0 !important;
+    position: relative;
+    box-sizing: border-box;
+  }
+
+  .scroll-btn{
+    position: absolute;
+    right: 14px;
+    top: 12px;
+  }
+  .input-text-field-cls {
+    height: 40px;
+    min-width: 280px;
+    width:100%;
+    padding: 0px 35px 0px 12px;
+    font-size: 24px;
+    border: 1px solid #53565a;
+    box-sizing: border-box;
+    border-radius: 2px;
+  }
+  .input-wrapper {
+    position: relative;
+    width:60%;
+
+    .search-icon-cls {
+      position: absolute;
+      top: 8px;
+      right: 5px;
+      color: #53565a;
+    }
+  }
+
+  .example-header-image {
+    background-image: url("https://material.angular.io/assets/img/examples/shiba1.jpg");
+    background-size: cover;
+  }
+
+  .property-cls {
+    padding: 10px 20px;
+    background: #aaa5;
+    height: 190px;
+    margin: 10px;
+    box-shadow: 1px 0px 2px 2px #aaa5;
+  }
+
+  .view-more{
+    float: right;
+    cursor: pointer;
+  }
+
+  .example-viewport {
+    height: 100%;
+    width: 100%;
+  }
+
+  .property-details div {
+    padding: 5px;
+  }
+}

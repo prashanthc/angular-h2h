@@ -1,0 +1,8 @@
+<h1 mat-dialog-title>Hi there,</h1>
+<div mat-dialog-content>
+  <p>Congratulations, you are Eligible for pre-approved loan. Please click 'OK' to know more.</p>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">No Thanks</button>
+  <button mat-button [mat-dialog-close]="true" cdkFocusInitial>Ok</button>
+</div>

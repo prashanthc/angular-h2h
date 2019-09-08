@@ -1,0 +1,17 @@
+<div class="parent-container">
+  <div class="toolbar-cls">
+    <mat-toolbar color="primary" class="app-header">
+      <div  class="parent-toolbar" fxLayout="row" fxLayoutAlign=" center">
+      <div fxFlex fxLayout="row" fxLayoutAlign="start center">
+        <img routerLink="home" src="assets/logo.png" />
+      </div>
+      <div class="nav-tool-items" *ngIf="currentUser">
+        <a mat-button mat-raised-button (click)="logout()">Logout</a>
+      </div>
+      </div>
+    </mat-toolbar>
+  </div>
+  <div class="router-cls">
+    <router-outlet></router-outlet>
+  </div>
+</div>
